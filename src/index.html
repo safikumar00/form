@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Quote Form</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .line {
+            background: linear-gradient(to right, #2563eb 50%, #d1d5db 50%, #d1d5db 100%);
+            animation: gradient 0.5s ease 1 forwards;
+        }
+
+        .line-fill {
+            background-color: #2563eb;
+        }
+
+        body {
+            font-family: "DM Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 via-sky-100 to-white min-h-screen flex flex-col items-center">
+
+    <header class="w-full shadow-sm h-12 mb-9 flex items-center justify-center">
+        <p>"LOGO COMES HERE"</p>
+    </header>
+
+    <div class="w-full px-4">
+
+        <div class="text-center mb-6 w-full  max-w-[300px] mx-auto">
+            <h2 class="text-4xl font-bold text-gray-900">Get Instant Personal Loan in easy <span
+                    class="text-blue-500">3-Steps</span></h2>
+            <p class="text-gray-500 mt-2">Fill the form below to get a personalized loan offer</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl lg:p-8 p-6 w-full max-w-[400px] mx-auto">
+            <!-- Form Header -->
+
+            <!-- Progress Indicator -->
+            <div class="flex items-center flex-col justify-center mb-4">
+                <div class="flex space-x-0 w-full items-center px-1">
+                    <div
+                        class="w-6 h-6 rounded-full progress-indicators bg-blue-600 flex items-center justify-center text-sm">
+
+                    </div>
+                    <div class="flex-1 w-full line-1 line h-1 rounded-3xl  mx-2"></div>
+                    <div
+                        class="w-6 h-6 rounded-full progress-indicators bg-gray-300 text-sm flex items-center justify-center">
+
+                    </div>
+                    <div class="flex-1 w-full line-2 h-1 rounded-3xl bg-gray-300 mx-2 "></div>
+                    <div
+                        class="w-6 h-6 rounded-full progress-indicators bg-gray-300 text-sm flex items-center justify-center">
+
+                    </div>
+                </div>
+                <div class="w-full flex justify-between mt-2">
+                    <p class="step-indicator text-sm font-normal text-blue-600">Step-1</p>
+                    <p class="step-indicator text-sm font-normal text-gray-300">Step-2</p>
+                    <p class="step-indicator text-sm font-normal text-gray-300">Step-3</p>
+                </div>
+            </div>
+
+            <!-- Contact Details Form -->
+            <form class="space-y-6"
+                action="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwii_7bl3tuCAxWXcGwGHcqBCwEQPAgJ"
+                method="POST">
+                <div class="step">
+                    <label class="block text-2xl font-medium text-gray-700" for="mobile">Mobile number</label>
+                    <label class="block text-sm font-normal text-gray-600 mb-2" for="mobile">Enter your 10 Digit mobile
+                        number </label>
+                    <div class="mt-1 relative">
+                        <input id="mobile" name="mobile" type="number" placeholder="XXXXX XXXXX" maxlength="10"
+                            oninput="this.value = this.value.slice(0, 10)"
+                            class="w-full ps-12 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-900">
+                        <p class="absolute top-1.5 left-1.5 bg-white p-1">+91</p>
+                    </div>
+                </div>
+
+                <div class="step hidden">
+                    <label class="block text-2xl font-medium text-gray-700" for="pincode">Select Employement</label>
+                    <label class="block text-sm font-normal text-gray-600 mb-2" for="pincode">Are you a salaried and
+                        Self-Employeed</label>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Radio Option 1 -->
+                        <label
+                            class="w-full flex items-center justify-between p-3 border-2 rounded-lg cursor-pointer transition-all focus-within:ring-2 focus-within:ring-blue-500">
+                            <input type="radio" name="budget" class="sr-only">
+                            <div class="flex items-center">
+                                <span
+                                    class="w-5 h-5 mr-3 rounded-full border-2 border-gray-300 flex justify-center items-center">
+                                    <span class="w-3 h-3 bg-transparent rounded-full"></span>
+                                </span>
+                                <span class="text-gray-900 font-semibold">Salaried</span>
+                            </div>
+                        </label>
+
+                        <!-- Radio Option 2 -->
+                        <label
+                            class="w-full flex items-center justify-between p-3 border-2 rounded-lg cursor-pointer transition-all focus-within:ring-2 focus-within:ring-blue-500">
+                            <input type="radio" name="budget" class="sr-only">
+                            <div class="flex items-center">
+                                <span
+                                    class="w-5 h-5 mr-3 rounded-full border-2 border-gray-300 flex justify-center items-center">
+                                    <span class="w-3 h-3 bg-transparent rounded-full"></span>
+                                </span>
+                                <span class="text-gray-900 font-semibold">Self</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="step hidden">
+                    <label class="block text-2xl font-medium text-gray-700" for="pincode">Pincode</label>
+                    <label class="block text-sm font-normal text-gray-600 mb-2" for="pincode">Enter your area
+                        pincode</label>
+                    <div class="mt-1 relative">
+                        <input id="pincode" name="pincode" type="number" placeholder="Enter your pincode"
+                            oninput="this.value = this.value.slice(0, 6)"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-900">
+                    </div>
+                </div>
+
+                <div class="mt-2">
+                    <button type="button" id="nextBtn"
+                        class="w-full py-2 px-4 bg-blue-600 text-white rounded-lg shadow hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+                        Next
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="w-full max-w-[400px] mx-auto grid gap-4 mt-4">
+            <div
+                class="w-full mx-auto rounded-xl border bg-white shadow-sm  border-blue-200 p-2 items-center gap-2 flex">
+                <img src="./assets/tick.svg" alt="tick-mark" class="h-9 w-9">
+                <p class="text-xl">Safe & Secure</p>
+            </div>
+
+            <div
+                class="w-full mx-auto rounded-xl border bg-white shadow-sm  border-blue-200 p-2 items-center gap-2 flex">
+                <img src="./assets/tick.svg" alt="tick-mark" class="h-9 w-9">
+                <p class="text-xl">Digital Process</p>
+            </div>
+
+            <div
+                class="w-full mx-auto rounded-xl border bg-white shadow-sm  border-blue-200 p-2 items-center gap-2 flex">
+                <img src="./assets/tick.svg" alt="tick-mark" class="h-9 w-9">
+                <p class="text-xl">Complete Transparent</p>
+            </div>
+
+            <div
+                class="w-full mx-auto rounded-xl border bg-white shadow-sm  border-blue-200 p-2 items-center gap-2 flex">
+                <img src="./assets/tick.svg" alt="tick-mark" class="h-9 w-9">
+                <p class="text-xl">Low Interest Rate</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const steps = document.querySelectorAll(".step");
+            const nextBtn = document.getElementById("nextBtn");
+            const progressIndicators = document.querySelectorAll(".progress-indicators");
+            const stepIndicator = document.querySelectorAll(".step-indicator");
+            let currentStep = 0;
+
+            const radioLabels = document.querySelectorAll("label");
+
+            radioLabels.forEach(label => {
+                label.addEventListener("click", function () {
+
+                    radioLabels.forEach(lbl => {
+                        const radioInput = lbl.querySelector("input[type='radio']");
+                        const outerSpan = lbl.querySelector(".inline-block");
+
+                        if (radioInput && outerSpan) {
+                            const innerSpan = outerSpan.querySelector("span");
+
+                            radioInput.checked = false;
+                            outerSpan.classList.remove("border-blue-500");
+                            outerSpan.classList.add("border-gray-300");
+                            if (innerSpan) {
+                                innerSpan.classList.remove("bg-blue-500");
+                                innerSpan.classList.add("bg-transparent");
+                            }
+                        }
+                    });
+
+                    const radioInput = label.querySelector("input[type='radio']");
+                    const outerSpan = label.querySelector(".inline-block");
+
+                    if (radioInput && outerSpan) {
+                        const innerSpan = outerSpan.querySelector("span");
+
+                        radioInput.checked = true;
+                        outerSpan.classList.remove("border-gray-300");
+                        outerSpan.classList.add("border-blue-500");
+                        if (innerSpan) {
+                            innerSpan.classList.remove("bg-transparent");
+                            innerSpan.classList.add("bg-blue-500");
+                        }
+                    }
+                });
+            });
+            function showStep(step) {
+                steps.forEach((el, index) => {
+                    el.classList.toggle("hidden", index !== step);
+                    progressIndicators[index].classList.toggle("bg-blue-600", index <= step);
+                    progressIndicators[index].classList.toggle("bg-gray-300", index > step);
+                    stepIndicator[index].classList.toggle("text-blue-600", index <= step);
+                    stepIndicator[index].classList.toggle("text-gray-300", index > step);
+                });
+            }
+            function validateStep(step) {
+                if (step === 0) {
+                    const mobileInput = document.getElementById("mobile");
+                    if (!mobileInput.value || mobileInput.value.length !== 10) {
+                        alert("Please enter a valid 10-digit mobile number.");
+                        return false;
+                    } else if (mobileInput.value.length === 10) {
+                        document.querySelector('.line-1').classList.replace("line", "line-fill");
+                        document.querySelector('.line-2').classList.add("line");
+                    }
+                } else if (step === 1) {
+                    const employmentOptions = document.querySelectorAll("input[name='budget']");
+                    if (![...employmentOptions].some((opt) => opt.checked)) {
+                        alert("Please select an employment type.");
+                        return false;
+                    } else if ([...employmentOptions].some((opt) => opt.checked)) {
+                        nextBtn.innerHTML = "Submit";
+                        document.querySelector('.line-2').classList.replace("line", "line-fill");
+                    }
+                } else if (step === 2) {
+                    const pincodeInput = document.getElementById("pincode");
+                    if (!pincodeInput.value || pincodeInput.value.length !== 6) {
+                        alert("Please enter a valid 6-digit pincode.");
+                        return false;
+                    } else if (pincodeInput.value.length === 6) {
+                        nextBtn.setAttribute("type", "submit");
+                    }
+                }
+                return true;
+            }
+            function goToNextStep() {
+                if (validateStep(currentStep)) {
+                    currentStep++;
+                    if (currentStep < steps.length) {
+                        showStep(currentStep);
+                    } else {
+                        alert("Form completed!");
+                    }
+                }
+            }
+            showStep(currentStep);
+            nextBtn.addEventListener("click", goToNextStep);
+        });
+    </script>
+
+</body>
+
+</html>
